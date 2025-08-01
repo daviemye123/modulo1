@@ -1,3 +1,13 @@
+def pesoIdeal(anos):
+    """
+    Calcula un rango estimado de peso ideal basado en la edad.
+
+    Parámetros:
+    anos (int): La edad de la persona en años.
+
+    Retorna:
+    str: Una recomendación al peso ideal según la edad.
+    """
 anos=int(input("Ingrese el número de años: "))
 if anos <= 0:
     print("El número de años no puede ser negativo o tener 0. Por favor, verifique.")

@@ -17,3 +17,4 @@ elif anos >= 18 and anos < 25:
     print("Usted es joven adulto.")
 else:
     print("Usted es adulto.")
+pesoIdeal(anos)

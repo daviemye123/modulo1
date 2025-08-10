@@ -7,15 +7,15 @@ def mostrar_tabla_multiplicar():
 
     No retorna ningún valor, solo muestra los resultados en pantalla.
     """
-    try:
-        tabla = int(input("Ingrese el número de la tabla que desea: "))
-        contador = 0
-        while contador < 10:
-            contador += 1
-            resultado = tabla * contador
-            print(f"{tabla} x {contador} = {resultado}")
-    except ValueError:
-        print("Error: ingrese un número entero válido.")
+
+    tabla = int(input("Ingrese el número de la tabla que desea: "))
+    contador = 0
+    for contador in range (10) :
+        contador += 1
+        resultado = tabla * contador
+        print(f"{tabla} x {contador} = {resultado}")
+
+
 #inicia
 mostrar_tabla_multiplicar()
 

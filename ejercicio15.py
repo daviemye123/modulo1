@@ -12,12 +12,9 @@ def calcular_promedio(calificaciones):
     if not calificaciones:
         return 0.0
     return sum(calificaciones) / len(calificaciones)
-
-
 def obtener_estado(promedio):
     """
     Determina el estado del estudiante según su promedio.
-
     Parámetros:
     Si el promedio es mayor o igual a 3.0, retorna "Aprobado", de lo contrario "Reprobado".
 
@@ -40,15 +37,11 @@ def generar_reporte(estudiantes):
     """
     print("\nReporte de Calificaciones:")
     print("-" * 30)
-
     for nombre, calificaciones in estudiantes.items():
         promedio = calcular_promedio(calificaciones)
         estado = obtener_estado(promedio)
         print(f"- Estudiante: {nombre}, Promedio: {promedio:.2f}, Estado: {estado}")
-
     print("-" * 30)
-
-
 # Diccionario principal de estudiantes y calificaciones
 estudiantes = {
     "el rosas": [4.0, 4.5, 5.0],
@@ -57,5 +50,4 @@ estudiantes = {
     "diego": [1.8, 2.0, 2.5],
     "andres": [5.0, 4.8, 4.9]
 }
-
 generar_reporte(estudiantes)

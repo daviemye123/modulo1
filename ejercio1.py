@@ -6,22 +6,13 @@ def peso_ideal():
 
     No retorna ningún valor ya que lo imprime.
     """
-    peso = input("Ingrese su peso en kg: ")
-    altura = input("Ingrese su altura en metros: ")
-
-    if peso.replace('.', '', 1).isdigit() and altura.replace('.', '', 1).isdigit():
-        peso = float(peso)
-        altura = float(altura)
-
-        if peso <= 0 or altura <= 0:
-            print("Error: El peso y la altura deben ser mayores que cero.")
-            return
-
-        imc = peso / (altura ** 2)
-        print(f"Su índice de masa corporal es: {imc:.2f}")
-    else:
-        print("Entrada inválida. Solo se permiten números positivos.")
-
+    peso = float(input("Ingrese su peso en kg: "))
+    altura = float(input("Ingrese su altura en metros: "))
+    if peso <= 0 or altura <= 0:
+        print("El peso y la altura deben ser mayores a cero. Por favor, verifique.")
+        return
+    imc=peso / (altura ** 2)
+    print(f"Su índice de masa corporal (IMC) es: {imc:.2f}")
 # inicia
 peso_ideal()
 

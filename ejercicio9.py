@@ -17,8 +17,6 @@ def agregar_contacto():
 
     agenda[nombre] = telefono
     print(f"Contacto '{nombre}' guardado correctamente.")
-
-
 def buscar_contacto():
     """
     Solicita al usuario el nombre del contacto para buscar y muestra su número de teléfono si existe.
@@ -28,8 +26,6 @@ def buscar_contacto():
         print(f"Teléfono de {nombre}: {agenda[nombre]}")
     else:
         print(f"No se encontró ningún contacto con el nombre '{nombre}'.")
-
-
 def mostrar_contactos():
     """
     muestra todos los contactos.
@@ -37,12 +33,9 @@ def mostrar_contactos():
     if not agenda:
         print("La agenda está vacía.")
         return
-
     print("\n Contactos guardados")
     for nombre, telefono in agenda.items():
         print(f"{nombre}: {telefono}")
-
-
 def menu_agenda():
     """
     Muestra un menú interactivo para que el usuario gestione su agenda.
@@ -54,9 +47,7 @@ def menu_agenda():
         print("2. Buscar contacto")
         print("3. Mostrar todos los contactos")
         print("4. Salir")
-
         opcion = input("Seleccione una opción (1-4): ")
-
         if opcion == "1":
             agregar_contacto()
         elif opcion == "2":
@@ -69,4 +60,3 @@ def menu_agenda():
         else:
             print("Opción inválida. Intente nuevamente.")
 menu_agenda()
-

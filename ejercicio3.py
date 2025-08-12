@@ -17,7 +17,7 @@ def frase_vocales_consonantes():
     for caracter in frase.lower():
         if caracter in vocales:
             contador_vocales += 1
-        elif caracter.isalpha():
+        elif caracter:
             contador_consonantes += 1
 
     print(f"Cantidad de vocales: {contador_vocales}")

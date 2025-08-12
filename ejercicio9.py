@@ -1,13 +1,11 @@
 agenda = {}
-
-
 def agregar_contacto():
     """
     Solicita al usuario el nombre y número del nuevo contacto.
     Si el nombre ya existe, pregunta si desea sobrescribirlo.
     """
     nombre = input("Ingrese el nombre del contacto: ").strip().capitalize()
-    telefono = int(input("Ingrese el número de teléfono: ")).strip()
+    telefono = int(input("Ingrese el número de teléfono: "))
 
     if nombre in agenda:
         confirmar = input(f"'{nombre}' ya existe. ¿Desea actualizar el número? (s/n): ").lower()

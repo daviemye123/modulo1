@@ -15,6 +15,8 @@ elif edad > 0 and edad < 18:
     print("Usted es menor de edad.")
 elif edad >= 18 and edad < 25:
     print("Usted es joven adulto.")
+elif edad >=120:
+    print("edad invalida.")
 else:
     print("Usted es adulto.")
 pesoIdeal(edad)

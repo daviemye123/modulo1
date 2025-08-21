@@ -3,10 +3,7 @@ Sistema de gestión de inventario para una tienda.
 Cada producto se representa como un diccionario con nombre, precio y cantidad.
 El inventario completo se almacena en una lista de diccionarios.
 """
-
-inventario = []  
-
-
+inventario = []
 def agregar_producto():
     """
     Solicita al usuario los datos de un nuevo producto y lo agrega al inventario.
@@ -70,8 +67,6 @@ def mostrar_inventario():
         print(f"Nombre: {producto['nombre'].capitalize()}, "
               f"Precio: ${producto['precio']:.2f}, "
               f"Cantidad: {producto['cantidad']}")
-
-
 def mostrar_menu():
     """
     Muestra un menú interactivo donde el usuario escoge la opcion.
@@ -96,6 +91,4 @@ def mostrar_menu():
             break
         else:
             print("Opción inválida. Intente nuevamente.")
-
-
 mostrar_menu()
